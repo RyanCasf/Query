@@ -1,1 +1,1 @@
-"<h1>Querys</h1><hr>" 
+<h1>Querys</h1><hr>
