@@ -11,6 +11,8 @@ CREATE TABLE pes01_usuario
     dataCadastro date default(curdate())
 );
 
+ALTER TABLE pes01_usuario ADD cancelado boolean default(false);
+
 SELECT * FROM pes01_usuario;
 insert INTO pes01_usuario (nome, nomeFantasia, email) values ("Ryan", "RyanCasF", "r@gmail.com"), ("Felipe" , "Ryfer", "y@gmail.com");
 DROP TABLE pes01_usuario;
@@ -21,6 +23,5 @@ FROM pes01_usuario u
 WHERE u.desativado = 0 AND u.nome LIKE '%%';
 
 
-
-
+DELETE FROM duozada.mth01_match;
 DROP DATABASE test;

@@ -15,7 +15,8 @@ WHERE u.desativado = 0
 GROUP BY u.chave;
 
 # games mais jogados
-SELECT DISTINCT j.nome AS 'Game' FROM gam01_jogo j
-ORDER BY COUNT(j.chave) ASC;
+SELECT j.nome AS 'Game' FROM gam01_jogo j
+GROUP BY j.nome 
+ORDER BY COUNT(j.usuario_chave) DESC;
 
-
+SELECT * FROM gam01_jogo;
