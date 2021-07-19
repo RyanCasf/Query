@@ -20,3 +20,8 @@ GROUP BY j.nome
 ORDER BY COUNT(j.usuario_chave) DESC;
 
 SELECT * FROM gam01_jogo;
+
+# SELF 
+SELECT u.nome AS Nome, u.dataCadastro As data
+FROM pes01_usuario u, pes01_usuario uu  
+WHERE YEAR(u.dataCadastro) = YEAR(uu.dataCadastro) AND uu.chave != u.chave;
