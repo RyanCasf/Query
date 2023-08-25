@@ -25,4 +25,4 @@ WHERE u.desativado = 0 AND u.nome LIKE '%%';
 
 
 DELETE FROM duozada.mth01_match;
-DROP DATABASE test;
+DROP DATABASE Duozada;
